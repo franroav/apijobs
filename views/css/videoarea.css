@@ -1,0 +1,92 @@
+/*===========================
+2.9 Video Area
+===========================*/
+.video-area {
+	text-align: center;
+    position: relative;
+    background: url(../img/ach-bg-img.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: auto;
+}
+
+.video-area:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #004eb1b3;
+}
+.video-area h2{
+	font-size: 40px;
+	font-weight: 500;
+	color: #ffffff;
+	letter-spacing: 0;
+	margin-bottom: 14px;
+    line-height: 42px;
+}
+.video-area p{
+	color: #fff;
+	font-weight: 500;
+	font-size: 14px;
+}
+.video-area a{
+	font-size: 22px;
+    color: #2121e6a8;
+    height: 50px;
+    width: 50px;
+	position: relative;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 53px;
+    padding-left: 6px;
+    background: #fff;
+    display: inline-block;
+    margin-top: 50px;
+}
+.video-area a:before,
+.video-area a:after{
+	content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.video-area a:before{
+	-webkit-animation: scaling 1s linear 0s infinite;
+	-o-animation: scaling 1s linear 0s infinite;
+	animation: scaling 1s linear 0s infinite;
+}
+.video-area a:after{
+	-webkit-animation: scaling 1s linear 0.3s infinite;
+	-o-animation: scaling 1s linear 0.3s infinite;
+	animation: scaling 1s linear 0.3s infinite;
+}
+@keyframes scaling{
+	0%{
+		opacity: 0;
+		-webkit-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+		transform: scale(1);
+	}
+	15%{
+		opacity: 0.7;
+		-webkit-transform: scale(1.05);
+		-ms-transform: scale(1.05);
+		-o-transform: scale(1.05);
+		transform: scale(1.05);
+	}
+	100%{
+		opacity: 0;
+		-webkit-transform: scale(2);
+		-ms-transform: scale(2);
+		-o-transform: scale(2);
+		transform: scale(2);
+	}
+}
